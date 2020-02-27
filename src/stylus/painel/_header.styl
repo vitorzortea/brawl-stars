@@ -1,0 +1,102 @@
+header
+    display flex
+    width 100%
+
+    &>div:first-child
+        flex: auto
+        display flex
+        align-items center
+
+        .btn-perfil
+            cursor pointer
+            text-align center
+
+            img
+                display table
+                margin 0 auto -10px
+                max-width 40px
+
+            p
+                font-size 16px
+                white-space nowrap
+            
+        .btn-time-line
+            cursor pointer
+            
+            span>div:first-child
+                display flex
+                align-items center
+                position relative
+                z-index 2
+
+                img:first-child
+                    width 35px
+                    margin -8px 10px -5px 0
+
+                img:nth-child(2n)
+                    width: 25px
+                    margin-right 5px
+                
+                p
+                    color #febe20
+            
+            
+            span>div:last-child
+                width 100%
+                min-width 150px
+                height 20px
+                border solid 1px black
+                transform skew(-5deg, 0deg)
+                border-radius 5px
+                background linear-gradient(to bottom, #1f2438 49%, #283043 50%)
+
+                &:before
+                    content ''
+                    width 40%
+                    height 100%
+                    position absolute
+                    top 0
+                    left 0
+                    display table
+                    background linear-gradient(to bottom, #ed7425 49%, #d85c40 50%)
+
+    &>div:last-child
+        display flex
+        align-items center
+
+        &>div:not(.box-default)
+            display flex
+            align-items center
+            background-color black
+            margin 5px 10px
+            padding-right 10px
+            min-width 80px
+
+            img
+                width 30px
+                margin -5px 5px -5px -10px
+
+            p
+                flex auto
+                text-align center
+
+        .btn-amigos 
+            cursor pointer
+
+            span
+                display flex
+                align-items center
+                padding 2px
+
+                img
+                    width 20px
+                    margin-right 5px
+
+        .btn-menu
+            cursor pointer
+
+            span
+                padding 3px 15px
+            
+                i
+                    font-size 22px

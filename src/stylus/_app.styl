@@ -1,0 +1,49 @@
+#brawstars
+    display table
+    background-color #0245ba
+    width 100%
+    height 100vh
+    position relative
+    overflow hidden
+
+    &>.main
+        position absolute
+        z-index 2
+        width: 100%
+
+    #bg-skull
+        position absolute
+        display table
+        z-index 1
+        width 100%
+        height 100vh
+        top 0
+        left 0
+        animation  bg-skull 20s infinite cubic-bezier(0.30, 0.30, 0.60, 0.60)
+
+        &:before,&:after
+            content ''
+            display table
+            position absolute
+            width 100%
+            height 100vh
+            background-image url(assets/img/bg-skull.png)
+            background-size auto 25%
+            opacity 0.4
+
+        &:before
+            top 0
+            left 0
+
+        &:after
+            top 100%
+            left 0
+
+@keyframes bg-skull
+  0%
+      transform translate(0, 0)
+  100%
+      transform translate(0, -100%)
+
+
+
