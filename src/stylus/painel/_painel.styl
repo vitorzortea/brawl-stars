@@ -2,3 +2,96 @@
     display table
     width 100%
     height 100vh
+
+    .main-selectors
+      display flex
+      align-items center
+
+      .menu-left, .menu-right
+        .box-default
+          margin 30px 10px
+          display table
+          min-width 100px
+
+          span
+            width 100%
+            text-align center
+
+            img
+              max-height 50px
+              margin-top -20px
+              margin-bottom -5px
+
+      .menu-center
+        flex auto
+        padding 20px
+        background-image -webkit-radial-gradient(center, ellipse cover, rgba(65,231,255,0.65) 0%,rgba(65,231,255,0) 60%)
+
+        .rank
+          display flex
+          align-items center
+          justify-content center
+          padding 20px 20px 50px
+
+          .level
+            width 50px
+            height 50px
+            background-color gray
+
+            p
+              padding-top 20px
+              font-size 20px
+              text-align center
+
+          .bar
+            background-image linear-gradient(to bottom, #430024 49%, #610035 50%)
+            position relative
+            height 35px
+            min-width 100px
+            border solid 2px black
+            display flex
+            align-items center
+            justify-content center
+            font-size 16px
+
+            &:before
+              content ''
+              width 40%
+              height 100%
+              position absolute
+              top 0
+              left 0
+              display table
+              background linear-gradient(to bottom, #ed7425 49%, #d85c40 50%)
+
+            &>span
+              position relative
+              z-index 2
+
+              img
+                height 1.5em
+                display inline
+                vertical-align middle
+
+          .poder
+            background-color black
+            width 35px
+            height 35px
+            text-align center
+            display flex
+            align-items center
+            justify-content center
+            position relative
+
+            &>p:first-child
+              color #cbcbcb
+              font-size 16px
+              position absolute
+              top 0
+              left 50%
+              transform translate(-50%, -50%)
+
+            &>p:last-child
+              font-size 20px
+
+
