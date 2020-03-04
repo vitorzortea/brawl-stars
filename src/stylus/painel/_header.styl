@@ -1,28 +1,29 @@
 header
     display flex
     width 100%
+    padding 10px 0
 
     &>div:first-child
         flex: auto
         display flex
-        align-items center
+        //align-items center
 
         .btn-perfil
-            cursor pointer
             text-align center
+            min-width 150px
 
             img
                 display table
                 margin 0 auto -10px
-                max-width 40px
+                max-width 50px
 
             p
-                font-size 16px
+                font-size 18px
                 white-space nowrap
-            
+
         .btn-time-line
             cursor pointer
-            
+
             span>div:first-child
                 display flex
                 align-items center
@@ -30,17 +31,17 @@ header
                 z-index 2
 
                 img:first-child
-                    width 35px
-                    margin -8px 10px -5px 0
+                    width 40px
+                    margin -3px 10px -5px 0
 
                 img:nth-child(2n)
                     width: 25px
                     margin-right 5px
-                
+
                 p
                     color #febe20
-            
-            
+
+
             span>div:last-child
                 width 100%
                 min-width 150px
@@ -80,7 +81,7 @@ header
                 flex auto
                 text-align center
 
-        .btn-amigos 
+        .btn-amigos
             cursor pointer
 
             span
@@ -97,6 +98,6 @@ header
 
             span
                 padding 3px 15px
-            
+
                 i
                     font-size 22px
