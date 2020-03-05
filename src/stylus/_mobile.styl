@@ -1,0 +1,73 @@
+@media screen and (max-width: 900px)
+  header
+    flex-wrap wrap-reverse
+
+    &>div:first-child
+      justify-content space-between
+
+    &>div:last-child
+      flex auto
+      justify-content space-between
+
+  #painel .main-selectors
+    .menu-left, .menu-right
+      width 100%
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      order 2
+
+      .box-default
+        margin 30px 0 0
+
+    .menu-cente
+      order 1
+
+  footer
+    padding-top 40px
+    justify-content space-between
+
+    .boxes-user
+      display flex
+      justify-content space-between
+
+@media screen and (max-width: 450px)
+  html, body
+    font-size 0.9rem
+  header
+    &>div:first-child
+      align-items center
+
+      .btn-perfil
+        min-width auto
+        flex 50%
+        margin 0
+
+      .btn-time-line
+        flex 50%
+        margin 0
+
+        span>div:last-child
+          min-width auto
+
+    &>div:last-child
+      flex-wrap wrap-reverse
+
+      &>div:not(.box-default)
+        flex 100%
+        width 100%
+        padding 10px 0
+
+        &>div
+          width calc(25% - 20px)
+          margin 0 10px
+          min-width auto
+
+  #painel .main-selectors
+    .menu-left, .menu-right
+      .box-default
+        min-width auto
+        flex 1
+
+    .menu-center
+      padding 20px 0
