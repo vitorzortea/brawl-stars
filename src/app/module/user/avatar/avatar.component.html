@@ -1,0 +1,8 @@
+<app-header [linkVoltar]="link" [title]="title"></app-header>
+<div class="main-select-avatar">
+    <ul>
+        <li *ngFor="let avatar of user.avatar" (click)="alterarAvatar(avatar)">
+            <img src="assets/img/icones/avatars/{{avatar}}.png" alt="" />
+        </li>
+    </ul>
+</div>

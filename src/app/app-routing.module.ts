@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'painel',
     loadChildren: './module/painel/painel.module#PainelModule'
+  },
+  {
+    path: 'user',
+    loadChildren: './module/user/user.module#UserModule'
   }
 ];
 

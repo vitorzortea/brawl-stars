@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { UserService } from 'src/app/backend/user.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +6,12 @@ import { UserService } from 'src/app/backend/user.service';
   styleUrls: ['./header.component.styl']
 })
 export class HeaderComponent implements OnInit {
+  @Input() linkVoltar;
+  @Input() title;
 
-  constructor(
-    public user: UserService
-  ) { }
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
 }
