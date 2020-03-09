@@ -1,0 +1,15 @@
+<app-header [linkVoltar]="link" [title]="title"></app-header>
+<div class="main-color-name">
+    <div>
+        <div
+            class="box-default btn-time-line"
+            routerLink="/user/nome"
+            *ngFor="let nameColor of user.nameColor; index as i"
+            (click)="tocarNome(i)"
+        >
+            <span>
+                <p class="nome-user">{{this.user.printName('.nome-user', true)}}</p>
+            </span>
+        </div>
+    </div>
+</div>

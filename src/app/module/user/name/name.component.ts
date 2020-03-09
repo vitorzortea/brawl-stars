@@ -3,13 +3,13 @@ import { UserService } from 'src/app/backend/user.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-avatar',
-  templateUrl: './avatar.component.html',
-  styleUrls: ['./avatar.component.styl']
+  selector: 'app-name',
+  templateUrl: './name.component.html',
+  styleUrls: ['./name.component.styl']
 })
-export class AvatarComponent implements OnInit {
+export class NameComponent implements OnInit {
   public link = '/user';
-  public title = 'SELECIONAR ÍCONE';
+  public title = 'SELECIONAR COR';
 
   constructor(
     public user: UserService,
@@ -19,8 +19,8 @@ export class AvatarComponent implements OnInit {
   ngOnInit() {
   }
 
-  alterarAvatar(avatar) {
-    this.user.user.avatar = avatar
+  tocarNome(index){
+    this.user.user.colorName = index
     this.router.navigate(['/user/informacoes'])
   }
 

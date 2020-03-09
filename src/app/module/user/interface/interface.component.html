@@ -7,10 +7,10 @@
             <p>#{{user.user.id}}</p>
         </div>
         <div>
-            <div class="box-default btn-time-line">
+            <div class="box-default btn-time-line" routerLink="/user/nome">
                 <span>
                     <i class="engrenagem"></i>
-                    <p>{{user.user.name}}</p>
+                    <p class="nome-user">{{this.user.printName('.nome-user')}}</p>
                 </span>
             </div>
             <div class="box-level-user">

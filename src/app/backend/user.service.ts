@@ -7,7 +7,7 @@ export class UserService {
   public user = {
     id : "QG0COQCC",
     name: "Zortéa Front",
-    colorName: 1,
+    colorName: 0,
     avatar: "icon1",
     level: 141,
     levelStars: 482,
@@ -74,23 +74,36 @@ export class UserService {
   ]
 
   public nameColor = [
-    '#',
-    '#',
-    '#',
-    '#',
-    '#',
-    '#',
-    '#',
-    '#',
-    '#',
-    '#',
-    '#',
-    '#',
+    '#ffffff',
+    '#a2e4fe',
+    '#4ddba1',
+    '#f9982f',
+    '#f9775d',
+    '#ee5738',
+    '#f9c907',
+    '#ffce89',
+    '#a8e132',
+    '#1ca5f5',
+    '#ff8bfd',
+    '#cb5bff',
   ]
 
-  constructor() { }
 
-  get getUser() { return this.user }
-  get getAvatar() { return this.avatar }
-  get getNameColor() { return this.nameColor }
+  constructor() { }
+  
+  printName(nomeclasse, todasCores){
+    const nomes = document.querySelectorAll(nomeclasse)
+    if(todasCores){
+      nomes.forEach((nome, index) => nome.innerHTML = this.nomeHTML(index+1))
+    }else{
+      nomes.forEach((nome) => nome.innerHTML = this.nomeHTML())
+    }
+  }
+
+  nomeHTML(index?){
+    if(index){
+      return `<p style="color: ${this.nameColor[index-1]}">${this.user.name}</p>`
+    }
+    return `<p style="color: ${this.nameColor[this.user.colorName]}">${this.user.name}</p>`
+  }
 }
