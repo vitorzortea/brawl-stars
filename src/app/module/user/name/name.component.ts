@@ -19,9 +19,9 @@ export class NameComponent implements OnInit {
   ngOnInit() {
   }
 
-  tocarNome(index){
-    this.user.user.colorName = index
-    this.router.navigate(['/user/informacoes'])
+  tocarNome(index) {
+    this.user.user.colorName = index + 1;
+    this.router.navigate(['/user/informacoes']);
   }
 
 }

@@ -1,0 +1,92 @@
+.statistic
+  display table
+  width 100%
+  max-width 900px
+  margin 0 auto
+
+  .person
+    display flex
+    align-items center
+    justify-content center
+
+    .avatar
+      margin-right 30px
+      position relative
+      line-height 0
+      cursor pointer
+
+      img
+        width 120px
+        transition 0.5s
+
+      &:hover img
+        transform scale(1.13)
+
+      p
+        text-align center
+        color #9bcdfe
+        font-size 18px
+        position relative
+        z-index 3
+
+    .btn-time-line
+      margin 0 0 20px
+
+      span
+        padding 10px 30px
+        font-size 18px
+
+    .box-level-user
+      position relative
+      text-align center
+      margin-left 10px
+
+      p:first-child
+        position absolute
+        top 50%
+        left 0
+        transform translate(-50%, -50%)
+        z-index 2
+        background-image url(assets/img/icones/rank.png)
+        background-size 100% 100%
+        display flex
+        align-items center
+        justify-content center
+        height 45px
+        width 40px
+        font-size 14px
+
+      p:last-child
+        background-image linear-gradient(to bottom, #202539 49%, #283043 50%)
+        position relative
+        height 35px
+        min-width 100px
+        border solid 2px black
+        display flex
+        align-items center
+        justify-content center
+        font-size 16px
+        border-radius 5px
+
+        span
+          position relative
+          z-index 2
+          vertical-align middle
+
+          img
+            vertical-align middle
+            height 1.5em
+            margin-right 5px
+
+
+
+        &:after
+          content ''
+          width 40%
+          height 100%
+          position absolute
+          top 0
+          left 0
+          display table
+          background linear-gradient(to bottom, #00bbfe 49%, #2c7df3 50%)
+

@@ -3,7 +3,7 @@
         <div class="box-default btn-perfil" [routerLink]="['/user']" >
             <span>
                 <img src="assets/img/icones/avatars/{{user.user.avatar}}.png" alt="avatar">
-                <p class="nome-user">{{this.user.printName('.nome-user')}}</p>
+                <p class="{{'text-name-'+this.user.user.colorName}}">{{this.user.user.name}}</p>
             </span>
         </div>
         <div class="box-default btn-time-line">

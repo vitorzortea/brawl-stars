@@ -1,6 +1,7 @@
 <app-header [linkVoltar]="link" [title]="user.user.name"></app-header>
 <div class="main">
-    <div class="person">
+    <div class="statistic">
+      <div class="person">
         <div class="avatar" routerLink="/user/avatar" >
             <i class="engrenagem"></i>
             <img src="assets/img/icones/avatars/{{user.user.avatar}}.png" alt="{{user.user.name}}" />
@@ -10,13 +11,14 @@
             <div class="box-default btn-time-line" routerLink="/user/nome">
                 <span>
                     <i class="engrenagem"></i>
-                    <p class="nome-user">{{this.user.printName('.nome-user')}}</p>
+                    <p class="{{'text-name-'+this.user.user.colorName}}">{{this.user.user.name}}</p>
                 </span>
             </div>
             <div class="box-level-user">
                 <p>{{user.user.level}}</p>
-                <p><img src="assets/img/icones/text-star.png" alt="Estrelas:">{{user.user.levelStars}}/{{user.user.nextLevelStars}}</p>
+                <p><span><img src="assets/img/icones/text-star.png" alt="Estrelas:">{{user.user.levelStars}}/{{user.user.nextLevelStars}}</span></p>
             </div>
         </div>
+      </div>
     </div>
 </div>

@@ -5,10 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
   public user = {
-    id : "QG0COQCC",
-    name: "Zortéa Front",
-    colorName: 0,
-    avatar: "icon1",
+    id : 'QG0COQCC',
+    name: 'Zortéa Front',
+    colorName: 1,
+    avatar: 'icon1',
     level: 141,
     levelStars: 482,
     nextLevelStars: 1440,
@@ -90,20 +90,6 @@ export class UserService {
 
 
   constructor() { }
-  
-  printName(nomeclasse, todasCores){
-    const nomes = document.querySelectorAll(nomeclasse)
-    if(todasCores){
-      nomes.forEach((nome, index) => nome.innerHTML = this.nomeHTML(index+1))
-    }else{
-      nomes.forEach((nome) => nome.innerHTML = this.nomeHTML())
-    }
-  }
 
-  nomeHTML(index?){
-    if(index){
-      return `<p style="color: ${this.nameColor[index-1]}">${this.user.name}</p>`
-    }
-    return `<p style="color: ${this.nameColor[this.user.colorName]}">${this.user.name}</p>`
-  }
+
 }
