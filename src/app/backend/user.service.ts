@@ -71,6 +71,9 @@ export class UserService {
     'icon44',
     'icon45',
     'icon46',
+    'icon48',
+    'icon47',
+    'icon49',
   ]
 
   public nameColor = [

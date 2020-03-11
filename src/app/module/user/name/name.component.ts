@@ -21,7 +21,7 @@ export class NameComponent implements OnInit {
 
   tocarNome(index) {
     this.user.user.colorName = index + 1;
-    this.router.navigate(['/user/informacoes']);
+    this.router.navigate(['/user/estatistica']);
   }
 
 }

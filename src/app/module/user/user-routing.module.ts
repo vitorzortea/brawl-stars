@@ -10,14 +10,14 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'informacoes'
+    redirectTo: 'estatistica'
   },
   {
     path: '',
     component: UserComponent,
     children: [
       {
-        path: 'informacoes',
+        path: 'estatistica',
         component: InterfaceComponent
       },
       {

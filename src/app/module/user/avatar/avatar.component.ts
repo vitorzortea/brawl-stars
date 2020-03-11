@@ -21,7 +21,7 @@ export class AvatarComponent implements OnInit {
 
   alterarAvatar(avatar) {
     this.user.user.avatar = avatar
-    this.router.navigate(['/user/informacoes'])
+    this.router.navigate(['/user/estatistica'])
   }
 
 }
