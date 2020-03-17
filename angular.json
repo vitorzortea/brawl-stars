@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "brawl-stars"
+    }
+  },
+  "defaultProject": "brawl-stars",
+  "cli": {
+    "analytics": false
+  }
 }
