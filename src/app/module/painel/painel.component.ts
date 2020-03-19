@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BrawlersService } from 'src/app/backend/brawlers.service';
 
 @Component({
   selector: 'app-painel',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PainelComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public brawlers: BrawlersService
+  ) { }
 
   ngOnInit() {
   }

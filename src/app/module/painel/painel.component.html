@@ -8,7 +8,7 @@
                   <p>LOJA</p>
               </span>
           </div>
-          <div class="box-default btn-brawlers">
+          <div class="box-default btn-brawlers" routerLink="/brawlers">
               <span>
                   <img src="assets/img/icones/brawlers.png" alt="Store">
                   <p>BRAWLERS</p>
@@ -36,8 +36,8 @@
                 <p>4</p>
               </div>
             </div>
-            <div class="brawl-selected">
-              <img src="/assets/img/brawls/primo.png" alt="El Primo" title="El Primo" />
+            <div class="brawl-selected" routerLink="/brawlers" >
+              <img src="{{'/assets/img/brawls/' + brawlers.brawlerSelect.image + '.png'}}" alt={{brawlers.brawlerSelect.nome}} title={{brawlers.brawlerSelect.nome}} />
             </div>
           </span>
         </div>

@@ -24,7 +24,7 @@ export class BrawlersService {
       classe: '20',
       trofeus: '501',
       bio: 'Nita sends forth a shockwave, damaging enemies caught in the tremor. Nita summons the spirit of Big Baby Bear to hunt down her enemies.',
-      image: 'nina',
+      image: 'nita',
     },
     {
       nome: 'Colt',
@@ -486,6 +486,8 @@ export class BrawlersService {
       end: 1300
     }
   ];
+
+  brawlerSelect = this.brawlerList[0];
 
   constructor() { }
 }

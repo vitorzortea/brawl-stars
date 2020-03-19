@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="main-brawl-list">
+  <ul>
+    <li *ngFor="let brawl of brawl.brawlerList; let i=index" (click)=" trocarBrawl(i)">
+      <div class="rank">
+        <div class="level"><p>{{brawl.classe}}</p></div>
+        <div class="bar">
+          <span>
+            <img src="/assets/img/icones/trovel.png" alt="Trovel">
+            {{brawl.trofeus}}
+          </span>
+        </div>
+      </div>
+      <div class="avatar">
+        <img src="{{'assets/img/brawls/icon/' + brawl.image + '.png'}}" alt={{brawl.nome}} />
+        <div>
+          <p>{{brawl.nome}}</p>
+          <p>PODER {{brawl.poder}}</p>
+        </div>
+      </div>
+      <div class="rank-power">
+        <div class="bar">
+          <span>
+            <img src="/assets/img/icones/poder.png" alt="Trovel">
+            182
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

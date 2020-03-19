@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: 'user',
     loadChildren: './module/user/user.module#UserModule'
+  },
+  {
+    path: 'brawlers',
+    loadChildren: './module/brawler/brawler.module#BrawlerModule'
   }
 ];
 
